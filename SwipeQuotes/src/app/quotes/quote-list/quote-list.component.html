@@ -1,0 +1,14 @@
+<table class="table table-hover">
+  <thead>
+    <th>Quote</th>
+    <th>Author</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let quote of list">
+      <td (click)="onEdit(quote)">{{quote.quote}}</td>
+      <td (click)="onEdit(quote)">{{quote.author}}</td>
+          <td><a class="btn text-danger" (click)="onDelete(quote.id)"><i class="fa fa-trash"></i></a></td>
+    </tr>
+  </tbody>
+</table>
